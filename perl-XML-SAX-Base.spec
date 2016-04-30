@@ -4,7 +4,7 @@
 #
 Name     : perl-XML-SAX-Base
 Version  : 1.08
-Release  : 4
+Release  : 5
 URL      : http://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-SAX-Base-1.08.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-SAX-Base-1.08.tar.gz
 Summary  : No detailed summary available
