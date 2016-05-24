@@ -4,7 +4,7 @@
 #
 Name     : perl-XML-SAX-Base
 Version  : 1.08
-Release  : 5
+Release  : 6
 URL      : http://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-SAX-Base-1.08.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-SAX-Base-1.08.tar.gz
 Summary  : No detailed summary available
@@ -56,9 +56,9 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.22.0/XML/SAX/Base.pm
-/usr/lib/perl5/site_perl/5.22.0/XML/SAX/BuildSAXBase.pl
-/usr/lib/perl5/site_perl/5.22.0/XML/SAX/Exception.pm
+/usr/lib/perl5/site_perl/5.24.0/XML/SAX/Base.pm
+/usr/lib/perl5/site_perl/5.24.0/XML/SAX/BuildSAXBase.pl
+/usr/lib/perl5/site_perl/5.24.0/XML/SAX/Exception.pm
 
 %files doc
 %defattr(-,root,root,-)
