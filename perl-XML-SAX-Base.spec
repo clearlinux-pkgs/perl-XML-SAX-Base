@@ -4,7 +4,7 @@
 #
 Name     : perl-XML-SAX-Base
 Version  : 1.09
-Release  : 8
+Release  : 9
 URL      : http://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
 Summary  : 'Base class for SAX Drivers and Filters'
@@ -28,6 +28,9 @@ doc components for the perl-XML-SAX-Base package.
 %setup -q -n XML-SAX-Base-1.09
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
 if test -f Makefile.PL; then
 %{__perl} Makefile.PL
@@ -41,7 +44,7 @@ fi
 export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 make TEST_VERBOSE=1 test
 
 %install
@@ -58,9 +61,9 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.24.0/XML/SAX/Base.pm
-/usr/lib/perl5/site_perl/5.24.0/XML/SAX/BuildSAXBase.pl
-/usr/lib/perl5/site_perl/5.24.0/XML/SAX/Exception.pm
+/usr/lib/perl5/site_perl/5.26.0/XML/SAX/Base.pm
+/usr/lib/perl5/site_perl/5.26.0/XML/SAX/BuildSAXBase.pl
+/usr/lib/perl5/site_perl/5.26.0/XML/SAX/Exception.pm
 
 %files doc
 %defattr(-,root,root,-)
