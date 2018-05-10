@@ -4,7 +4,7 @@
 #
 Name     : perl-XML-SAX-Base
 Version  : 1.09
-Release  : 11
+Release  : 12
 URL      : http://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
 Summary  : 'Base class for SAX Drivers and Filters'
