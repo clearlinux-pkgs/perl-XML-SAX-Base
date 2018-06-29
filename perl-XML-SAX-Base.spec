@@ -4,24 +4,24 @@
 #
 Name     : perl-XML-SAX-Base
 Version  : 1.09
-Release  : 12
-URL      : http://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
-Source0  : http://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+Release  : 13
+URL      : https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
 Summary  : 'Base class for SAX Drivers and Filters'
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl
-Requires: perl-XML-SAX-Base-doc
+Requires: perl-XML-SAX-Base-man
 
 %description
 XML::SAX::Base is intended for use as a base class for SAX filter modules
 and XML parsers generating SAX events.
 
-%package doc
-Summary: doc components for the perl-XML-SAX-Base package.
-Group: Documentation
+%package man
+Summary: man components for the perl-XML-SAX-Base package.
+Group: Default
 
-%description doc
-doc components for the perl-XML-SAX-Base package.
+%description man
+man components for the perl-XML-SAX-Base package.
 
 
 %prep
@@ -34,7 +34,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
 if test -f Makefile.PL; then
 %{__perl} Makefile.PL
-make V=1  %{?_smp_mflags}
+make  %{?_smp_mflags}
 else
 %{__perl} Build.PL
 ./Build
@@ -65,6 +65,8 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 /usr/lib/perl5/site_perl/5.26.1/XML/SAX/BuildSAXBase.pl
 /usr/lib/perl5/site_perl/5.26.1/XML/SAX/Exception.pm
 
-%files doc
+%files man
 %defattr(-,root,root,-)
-%doc /usr/share/man/man3/*
+/usr/share/man/man3/XML::SAX::Base.3
+/usr/share/man/man3/XML::SAX::BuildSAXBase.3
+/usr/share/man/man3/XML::SAX::Exception.3
