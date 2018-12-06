@@ -62,9 +62,9 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.0/XML/SAX/Base.pm
-/usr/lib/perl5/vendor_perl/5.28.0/XML/SAX/BuildSAXBase.pl
-/usr/lib/perl5/vendor_perl/5.28.0/XML/SAX/Exception.pm
+/usr/lib/perl5/vendor_perl/5.28.1XML/SAX/Base.pm
+/usr/lib/perl5/vendor_perl/5.28.1XML/SAX/BuildSAXBase.pl
+/usr/lib/perl5/vendor_perl/5.28.1XML/SAX/Exception.pm
 
 %files dev
 %defattr(-,root,root,-)
