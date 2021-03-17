@@ -4,7 +4,7 @@
 #
 Name     : perl-XML-SAX-Base
 Version  : 1.09
-Release  : 26
+Release  : 27
 URL      : https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
 Summary  : 'Base class for SAX Drivers and Filters'
@@ -83,6 +83,6 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.3/XML/SAX/Base.pm
-/usr/lib/perl5/vendor_perl/5.30.3/XML/SAX/BuildSAXBase.pl
-/usr/lib/perl5/vendor_perl/5.30.3/XML/SAX/Exception.pm
+/usr/lib/perl5/vendor_perl/5.32.1/XML/SAX/Base.pm
+/usr/lib/perl5/vendor_perl/5.32.1/XML/SAX/BuildSAXBase.pl
+/usr/lib/perl5/vendor_perl/5.32.1/XML/SAX/Exception.pm
